@@ -1,6 +1,6 @@
 # GL Simple Text (glst) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-simple_text.h (glst) is the SIMPLEST, single header, single font, hard coded, 2D text library for OpenGL. You can include and start using right away. 
+simple_text.h (glst) is the SIMPLEST, single header, single font, hard coded, 2D text class for OpenGL. You can include and start using right away. 
 
 Lower case letters will be added.
 
