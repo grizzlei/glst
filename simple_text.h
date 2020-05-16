@@ -577,14 +577,14 @@ namespace glst{
             glEnd();
         }
 
-        void plus( ){
+        void minus( ){
             glBegin( GL_LINES );
                 glVertex2f( character.size * 0.20 , character.size * 0.50 );
                 glVertex2f( character.size * 0.80 , character.size * 0.50 );
             glEnd();
         }
 
-        void minus( ){
+        void plus( ){
             glBegin( GL_LINES );
                 glVertex2f( character.size * 0.20 , character.size * 0.50 );
                 glVertex2f( character.size * 0.80 , character.size * 0.50 );
