@@ -32,8 +32,8 @@ namespace glst{
                   spacing = size * 0.2;
         } character;
 
-        float position_x,
-              position_y,
+        float position_x = 0.0,
+              position_y = 0.0,
               color_r = 1.0,
               color_g = 1.0,
               color_b = 1.0,
@@ -577,14 +577,14 @@ namespace glst{
             glEnd();
         }
 
-        void minus( ){
+        void plus( ){
             glBegin( GL_LINES );
                 glVertex2f( character.size * 0.20 , character.size * 0.50 );
                 glVertex2f( character.size * 0.80 , character.size * 0.50 );
             glEnd();
         }
 
-        void plus( ){
+        void minus( ){
             glBegin( GL_LINES );
                 glVertex2f( character.size * 0.20 , character.size * 0.50 );
                 glVertex2f( character.size * 0.80 , character.size * 0.50 );
@@ -646,192 +646,192 @@ namespace glst{
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == 'A' || text[i] == 'a' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         A();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == 'B' || text[i] == 'b' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         B();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == 'C' || text[i] == 'c' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         C();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == 'D' || text[i] == 'd' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         D();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == 'E' || text[i] == 'e' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         E();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == 'F' || text[i] == 'f' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         F();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == 'G' || text[i] == 'g' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         G();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == 'H' || text[i] == 'h' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         H();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == 'I' || text[i] == 'i' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         I();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == 'J' || text[i] == 'j' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         J();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == 'K' || text[i] == 'k' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         K();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == 'L' || text[i] == 'l' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         L();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == 'M' || text[i] == 'm' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         M();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == 'N' || text[i] == 'n' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         N();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == 'O' || text[i] == 'o' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         O();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == 'P' || text[i] == 'p' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         P();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == 'Q' || text[i] == 'q' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         Q();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == 'R' || text[i] == 'r' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         R();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == 'S' || text[i] == 's' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         S();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == 'T' || text[i] == 't' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         T();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == 'U' || text[i] == 'u' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         U();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == 'V' || text[i] == 'v' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         V();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == 'W' || text[i] == 'w' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         W();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == 'X' || text[i] == 'x' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         X();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == 'Y' || text[i] == 'y' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         Y();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == 'Z' || text[i] == 'z' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         Z();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == '0' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         N0();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == '1' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         N1();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == '2' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         N2();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == '3' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         N3();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == '4' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         N4();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == '5' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         N5();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == '6' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         N6();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == '7' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         N7();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == '8' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         N8();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == '9' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         N9();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == '.' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         dot();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == ',' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         comma();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == '"' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         double_quote();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == '\'' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         single_quote();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == '!' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         exclamation_mark();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == '?' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         question_mark();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == '=' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         equals();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == '/' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         slash_fw();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == '-' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         minus();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == '+' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         plus();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                     else if( text[i] == '*' ){
-                        glTranslatef(character.size + character.spacing, 0, 0);
                         asterisk();
+                        glTranslatef(character.size + character.spacing, 0, 0);
                     }
                 }
                 glPopMatrix();
@@ -888,6 +888,14 @@ namespace glst{
 
         float get_color_a( ){
             return color_a;
+        }
+
+        float get_text_width( ){
+            return ( text.length() ) * (character.size + character.spacing);
+        }
+
+        float get_text_height( ){
+            return character.size;
         }
     };
 }
