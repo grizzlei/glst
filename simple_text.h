@@ -29,8 +29,8 @@ namespace glst{
     {
         struct character{
             float size = 1.0f,
-                  spacing_percentage = 0.2f,
-                  spacing = size * spacing_percentage;
+                  spacing_percentage = 20f,
+                  spacing = size * spacing_percentage * 0.01f;
         } character;
 
         float color_r = 1.0,
@@ -845,7 +845,7 @@ namespace glst{
 
         void set_character_spacing( float percentage ){
             character.spacing_percentage = percentage;
-            character.spacing = character.size * character.spacing_percentage;
+            character.spacing = character.size * character.spacing_percentage * 0.01;
         }
 
         float get_character_spacing( ){
