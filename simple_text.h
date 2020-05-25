@@ -28,13 +28,12 @@ namespace glst{
     class simple_text
     {
         struct character{
-            float size = 20,
-                  spacing = size * 0.2;
+            float size = 1.0f,
+                  spacing_percentage = 0.2f,
+                  spacing = size * spacing_percentage;
         } character;
 
-        float position_x = 0.0,
-              position_y = 0.0,
-              color_r = 1.0,
+        float color_r = 1.0,
               color_g = 1.0,
               color_b = 1.0,
               color_a = 1.0;
@@ -354,8 +353,8 @@ namespace glst{
                 glVertex2f( character.size , character.size * 0.80 );
             glEnd();
             glBegin( GL_LINES );
-                glVertex2f( character.size * 0.20 , 0 );
-                glVertex2f( character.size * 0.80 , character.size );
+                glVertex2f( character.size * 0.80 , 0 );
+                glVertex2f( character.size * 0.20 , character.size );
             glEnd();
         }
 
@@ -611,36 +610,25 @@ namespace glst{
 
         simple_text( std::string caption ){
             set_string( caption );
-            draw( );
         }
 
-        simple_text( std::string caption, float x, float y ){
-            set_position( x, y );
+        simple_text( std::string caption, int size ){
             set_string( caption );
-            draw( );
+            set_character_size( size );
+            //draw();
         }
 
-        simple_text( std::string caption, float x, float y, int size ){
-            set_position( x, y );
+        simple_text( std::string caption, int size, float r, float g, float b, float a ){
             set_string( caption );
-            set_size( size );
-            draw();
-        }
-
-        simple_text( std::string caption, float x, float y, int size, float r, float g, float b, float a ){
-            set_position( x, y );
-            set_string( caption );
-            set_size( size );
+            set_character_size( size );
             set_color( r, g, b, a );
-            draw();
+            //draw();
         }
 
         void draw( ){
             glPushMatrix();
             glPushAttrib( GL_CURRENT_BIT );
                 glColor4f( color_r, color_g, color_b, color_a );
-                glTranslatef( position_x, position_y, 0 );
-                glPushMatrix();
                 for ( std::size_t i = 0; i < text.length( ); i++ ){
                     if( text[i] == 0x20 || text[i] == 0x20 ){
                         glTranslatef(character.size + character.spacing, 0, 0);
@@ -834,21 +822,8 @@ namespace glst{
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
                 }
-                glPopMatrix();
             glPopAttrib();
             glPopMatrix();
-        }
-        void set_position( float x, float y){
-            position_x = x;
-            position_y = y;
-        }
-
-        float get_position_x( ){
-            return position_x;
-        }
-
-        float get_position_y( ){
-            return position_y;
         }
 
         void set_string( std::string s ){
@@ -859,12 +834,22 @@ namespace glst{
             return text;
         }
 
-        void set_size( int s ){
+        void set_character_size( int s ){
             character.size = s;
+            set_character_spacing( character.spacing_percentage );
         }
 
-        int get_size( ){
+        float get_character_size( ){
             return character.size;
+        }
+
+        void set_character_spacing( float percentage ){
+            character.spacing_percentage = percentage;
+            character.spacing = character.size * character.spacing_percentage;
+        }
+
+        float get_character_spacing( ){
+            return character.spacing;
         }
 
         void set_color( float r , float g, float b, float a){
@@ -896,6 +881,10 @@ namespace glst{
 
         float get_text_height( ){
             return character.size;
+        }
+
+        std::size_t length( ){
+            return text.length( );
         }
     };
 }
