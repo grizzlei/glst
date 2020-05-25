@@ -29,7 +29,7 @@ namespace glst{
     {
         struct character{
             float size = 1.0f,
-                  spacing_percentage = 20f,
+                  spacing_percentage = 20.f,
                   spacing = size * spacing_percentage * 0.01f;
         } character;
 
