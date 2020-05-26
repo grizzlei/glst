@@ -20,16 +20,19 @@ Lower case letters will be added.
                       symbols.set_color( 0.741, 0.645, 0.568, 1.0 );
     /// INITIALIZE: SET STRING, SIZE AND COLOR
     glst::simple_text credit( "github.com/grizzlei", 20, 1.0 , 0.819, 0.278 , 1.0 );
-    glst::simple_text letters( "abcdefghijklmnopqrstuvwxyz", 20, 0.490, 0.588, 0.396, 1.0 );
+    glst::simple_text lower_letters( "abcdefghijklmnopqrstuvwxyz", 20, 0.490, 0.588, 0.396, 1.0 );
+    glst::simple_text upper_letters( "ABCDEFGHIJKLMNOPQRSTUVWXYZ", 20, 1.0 , 0.819, 0.278 , 1.0 );
 
     glPushMatrix();
         glTranslatef( 10 , 10 , 0 );
-        letters.draw();
-        glTranslatef( 0 , 30 , 0 );
+        upper_letters.draw();
+        glTranslatef( 0 , 40 , 0 );
+        lower_letters.draw();
+        glTranslatef( 0 , 40 , 0 );
         numbers.draw();
-        glTranslatef( 0 , 30 , 0 );
+        glTranslatef( 0 , 40 , 0 );
         symbols.draw();
-        glTranslatef( 0 , 30 , 0 );
+        glTranslatef( 0 , 40 , 0 );
         credit.draw();
     glPopMatrix();
 
