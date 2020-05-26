@@ -2,8 +2,6 @@
 
 GL Simple Text (GLST) is the SIMPLEST, single header, single font, hard coded, 2D text class for OpenGL. You can include and start using right away. 
 
-Lower case letters will be added.
-
 ![](screenshot.png)
 
 ## Example
