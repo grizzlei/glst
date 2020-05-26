@@ -39,6 +39,24 @@ namespace glst{
               color_a = 1.0;
         std::string text;
 
+        void a( ){
+            glBegin( GL_LINE_LOOP );
+                glVertex2f( character.size * 0.80 , character.size * 0.20 );
+                glVertex2f( character.size * 0.20 , character.size * 0.20 );
+                glVertex2f( 0 , character.size * 0.40 );
+                glVertex2f( 0 , character.size * 0.80 );
+                glVertex2f( character.size * 0.20 , character.size );
+                glVertex2f( character.size * 0.80 , character.size );
+                glVertex2f( character.size , character.size * 0.60 );
+                glVertex2f( character.size , character.size * 0.60 );
+            glEnd();
+
+            glBegin( GL_LINES );
+                glVertex2f( character.size , character.size * 0.20 );
+                glVertex2f( character.size , character.size  );
+            glEnd();
+        }
+
         void A( ){
             glBegin( GL_LINES );
                 glVertex2f( 0 , character.size );
@@ -48,6 +66,19 @@ namespace glst{
                 glVertex2f( character.size * 0.25 , character.size * 0.5 );
                 glVertex2f( character.size * 0.75 , character.size * 0.5 );
             glEnd( );
+        }
+
+        void b( ){
+            glBegin( GL_LINE_STRIP );
+                glVertex2f( 0 , 0 );
+                glVertex2f( 0 , character.size );
+                glVertex2f( character.size * 0.80 , character.size );
+                glVertex2f( character.size  , character.size * 0.80 );
+                glVertex2f( character.size  , character.size * 0.40 );
+                glVertex2f( character.size * 0.80 , character.size * 0.20 );
+                glVertex2f( character.size * 0.20 , character.size * 0.20 );
+                glVertex2f( 0 , character.size * 0.40 );
+            glEnd();
         }
 
         void B( ){
@@ -77,6 +108,19 @@ namespace glst{
             glEnd();
         }
 
+        void c( ){
+            glBegin( GL_LINE_STRIP );
+                glVertex2f( character.size , character.size * 0.40 );
+                glVertex2f( character.size * 0.80 , character.size * 0.20 );
+                glVertex2f( character.size * 0.20 , character.size * 0.20 );
+                glVertex2f( 0 , character.size * 0.40 );
+                glVertex2f( 0 , character.size * 0.80 );
+                glVertex2f( character.size * 0.20 , character.size );
+                glVertex2f( character.size * 0.80 , character.size );
+                glVertex2f( character.size , character.size * 0.80 );
+            glEnd();
+        }
+
         void D( ){
             glBegin( GL_LINE_LOOP );
                 glVertex2f( 0 , 0 );
@@ -85,6 +129,19 @@ namespace glst{
                 glVertex2f( character.size , character.size * 0.70 );
                 glVertex2f( character.size , character.size * 0.30 );
                 glVertex2f( character.size * 0.80 , 0 );
+            glEnd();
+        }
+
+        void d( ){
+            glBegin( GL_LINE_STRIP );
+                glVertex2f( character.size , 0 );
+                glVertex2f( character.size , character.size );
+                glVertex2f( character.size * 0.20 , character.size );
+                glVertex2f( 0 , character.size * 0.80 );
+                glVertex2f( 0 , character.size * 0.40 );
+                glVertex2f( character.size * 0.20 , character.size * 0.20 );
+                glVertex2f( character.size * 0.80 , character.size * 0.20 );
+                glVertex2f( character.size , character.size * 0.40 );
             glEnd();
         }
 
@@ -101,6 +158,21 @@ namespace glst{
             glEnd( );
         }
 
+        void e( ){
+            glBegin( GL_LINE_STRIP );
+                glVertex2f( character.size , character.size * 0.80 );
+                glVertex2f( character.size * 0.80 , character.size );
+                glVertex2f( character.size * 0.20 , character.size );
+                glVertex2f( 0 , character.size * 0.80 );
+                glVertex2f( 0 , character.size * 0.40 );
+                glVertex2f( character.size * 0.20 , character.size * 0.20 );
+                glVertex2f( character.size * 0.80 , character.size * 0.20 );
+                glVertex2f( character.size , character.size * 0.40 );
+                glVertex2f( character.size , character.size * 0.60 );
+                glVertex2f( 0 , character.size * 0.60 );
+            glEnd();
+        }
+
         void F( ){
             glBegin( GL_LINES );
                 glVertex2f( character.size , 0 );
@@ -109,6 +181,19 @@ namespace glst{
                 glVertex2f( 0, character.size );
                 glVertex2f( 0, character.size * 0.50 );
                 glVertex2f( character.size * 0.50 , character.size * 0.50  );
+            glEnd();
+        }
+
+        void f( ){
+            glBegin( GL_LINE_STRIP );
+                glVertex2f( character.size , 0 );
+                glVertex2f( character.size * 0.60 , 0 );
+                glVertex2f( character.size * 0.40 , character.size * 0.20 );
+                glVertex2f( character.size * 0.40 , character.size );
+            glEnd();
+            glBegin( GL_LINES );
+                glVertex2f( 0 , character.size * 0.60 );
+                glVertex2f( character.size * 0.80 , character.size * 0.60 );
             glEnd();
         }
 
@@ -126,6 +211,26 @@ namespace glst{
             glEnd();
         }
 
+        void g( ){
+            glBegin( GL_LINE_LOOP );
+                glVertex2f( character.size * 0.80 , character.size * 0.20 );
+                glVertex2f( character.size * 0.20 , character.size * 0.20 );
+                glVertex2f( 0 , character.size * 0.40 );
+                glVertex2f( 0 , character.size * 0.80 );
+                glVertex2f( character.size * 0.20 , character.size );
+                glVertex2f( character.size * 0.80 , character.size );
+                glVertex2f( character.size , character.size * 0.60 );
+                glVertex2f( character.size , character.size * 0.60 );
+            glEnd();
+            glBegin( GL_LINE_STRIP );
+                glVertex2f( character.size , character.size * 0.20 );
+                glVertex2f( character.size , character.size * 1.20 );
+                glVertex2f( character.size * 0.80 , character.size * 1.40 );
+                glVertex2f( character.size * 0.20 , character.size * 1.40 );
+                glVertex2f( 0 , character.size * 1.20 );
+            glEnd();
+        }
+
         void H( ){
             glBegin( GL_LINES );
                 glVertex2f( 0 , 0 );
@@ -133,6 +238,18 @@ namespace glst{
                 glVertex2f( 0 , character.size * 0.50 );
                 glVertex2f( character.size , character.size * 0.50 );
                 glVertex2f( character.size , 0 );
+                glVertex2f( character.size , character.size );
+            glEnd();
+        }
+
+        void h( ){
+            glBegin( GL_LINE_STRIP );
+                glVertex2f( 0 , 0 );
+                glVertex2f( 0 , character.size );
+                glVertex2f( 0 , character.size * 0.40 );
+                glVertex2f( character.size * 0.20 , character.size * 0.20 );
+                glVertex2f( character.size * 0.80 , character.size * 0.20 );
+                glVertex2f( character.size , character.size * 0.40 );
                 glVertex2f( character.size , character.size );
             glEnd();
         }
@@ -145,6 +262,15 @@ namespace glst{
                 glVertex2f( character.size * 0.50 , character.size );
                 glVertex2f( character.size * 0.30 , character.size );
                 glVertex2f( character.size * 0.70 , character.size );
+            glEnd();
+        }
+
+        void i( ){
+            glBegin( GL_LINES );
+                glVertex2f( character.size * 0.50 , character.size * 0.15 );
+                glVertex2f( character.size * 0.50 , 0 );
+                glVertex2f( character.size * 0.50 , character.size * 0.40 );
+                glVertex2f( character.size * 0.50 , character.size );
             glEnd();
         }
 
@@ -163,6 +289,21 @@ namespace glst{
             glEnd();
         }
 
+        void j( ){
+            glBegin( GL_LINES );
+                glVertex2f( character.size * 0.80 , character.size * 0.15 );
+                glVertex2f( character.size * 0.80 , 0 );
+            glEnd();
+
+            glBegin( GL_LINE_STRIP );
+                glVertex2f( character.size * 0.80 , character.size * 0.40 );
+                glVertex2f( character.size * 0.80 , character.size );
+                glVertex2f( character.size * 0.60 , character.size * 1.20 );
+                glVertex2f( character.size * 0.20 , character.size * 1.20 );
+                glVertex2f( 0 , character.size );
+            glEnd();
+        }
+
         void K( ){
             glBegin( GL_LINES );
                 glVertex2f( 0 , 0 );
@@ -174,11 +315,31 @@ namespace glst{
             glEnd();
         }
 
+        void k( ){
+            glBegin( GL_LINES );
+                glVertex2f( 0 , 0 );
+                glVertex2f( 0 , character.size );
+                glVertex2f( 0 , character.size * 0.60 );
+                glVertex2f( character.size * 0.60 , character.size * 0.30 );
+                glVertex2f( 0 , character.size * 0.60 );
+                glVertex2f( character.size , character.size );
+            glEnd();
+        }
+
         void L( ){
             glBegin( GL_LINE_STRIP );
                 glVertex2f( 0 , 0 );
                 glVertex2f( 0 , character.size );
                 glVertex2f( character.size , character.size );
+            glEnd();
+        }
+
+        void l( ){
+            glBegin( GL_LINE_STRIP );
+                glVertex2f( character.size * 0.40 , 0 );
+                glVertex2f( character.size * 0.40 , character.size * 0.90 );
+                glVertex2f( character.size * 0.50 , character.size  );
+                glVertex2f( character.size * 0.60 , character.size );
             glEnd();
         }
 
@@ -192,12 +353,40 @@ namespace glst{
             glEnd();
         }
 
+        void m( ){
+            glBegin( GL_LINE_STRIP );
+                glVertex2f( 0 , character.size );
+                glVertex2f( 0 , character.size * 0.30 );
+                glVertex2f( character.size * 0.20 , character.size * 0.20 );
+                glVertex2f( character.size * 0.40 , character.size * 0.20 );
+                glVertex2f( character.size * 0.50 , character.size * 0.30 );
+                glVertex2f( character.size * 0.50 , character.size );
+                glVertex2f( character.size * 0.50 , character.size * 0.30 );
+                glVertex2f( character.size * 0.60 , character.size * 0.20 );
+                glVertex2f( character.size * 0.80 , character.size * 0.20 );
+                glVertex2f( character.size , character.size * 0.30 );
+                glVertex2f( character.size , character.size );
+            glEnd();
+        }
+
         void N( ){
             glBegin( GL_LINE_STRIP );
                 glVertex2f( 0 , character.size );
                 glVertex2f( 0 , 0 );
                 glVertex2f( character.size , character.size );
                 glVertex2f( character.size , 0 );
+            glEnd();
+        }
+
+        void n( ){
+            glBegin( GL_LINE_STRIP );
+                glVertex2f( 0 , character.size );
+                glVertex2f( 0 , character.size * 0.20 );
+                glVertex2f( 0 , character.size * 0.40 );
+                glVertex2f( character.size * 0.20 , character.size * 0.20 );
+                glVertex2f( character.size * 0.80 , character.size * 0.20 );
+                glVertex2f( character.size , character.size * 0.40 );
+                glVertex2f( character.size , character.size );
             glEnd();
         }
 
@@ -214,6 +403,19 @@ namespace glst{
             glEnd();
         }
 
+        void o( ){
+            glBegin( GL_LINE_LOOP );
+                glVertex2f( character.size * 0.20 , character.size );
+                glVertex2f( character.size * 0.80 , character.size );
+                glVertex2f( character.size , character.size * 0.80 );
+                glVertex2f( character.size , character.size * 0.40 );
+                glVertex2f( character.size * 0.80 , character.size * 0.20 );
+                glVertex2f( character.size * 0.20 , character.size * 0.20 );
+                glVertex2f( 0 , character.size * 0.40 );
+                glVertex2f( 0 , character.size * 0.80 );
+            glEnd();
+        }
+
         void P( ){
             glBegin( GL_LINE_STRIP );
                 glVertex2f( 0 , character.size );
@@ -223,6 +425,24 @@ namespace glst{
                 glVertex2f( character.size , character.size * 0.40 );
                 glVertex2f( character.size * 0.80 , character.size * 0.60 );
                 glVertex2f( 0 , character.size * 0.60 );
+            glEnd();
+        }
+
+        void p( ){
+            glBegin( GL_LINE_LOOP );
+                glVertex2f( character.size , character.size * 0.40 );
+                glVertex2f( character.size * 0.80 , character.size * 0.20 );
+                glVertex2f( character.size * 0.20 , character.size * 0.20 );
+                glVertex2f( 0 , character.size * 0.40 );
+                glVertex2f( 0 , character.size * 0.80 );
+                glVertex2f( character.size * 0.20 , character.size );
+                glVertex2f( character.size * 0.80 , character.size );
+                glVertex2f( character.size , character.size * 0.80 );
+            glEnd();
+
+            glBegin( GL_LINES );
+                glVertex2f( 0 , character.size * 0.20 );
+                glVertex2f( 0 , character.size * 1.40 );
             glEnd();
         }
 
@@ -243,6 +463,24 @@ namespace glst{
             glEnd();
         }
 
+        void q( ){
+            glBegin( GL_LINE_LOOP );
+                glVertex2f( character.size , character.size * 0.40 );
+                glVertex2f( character.size * 0.80 , character.size * 0.20 );
+                glVertex2f( character.size * 0.20 , character.size * 0.20 );
+                glVertex2f( 0 , character.size * 0.40 );
+                glVertex2f( 0 , character.size * 0.80 );
+                glVertex2f( character.size * 0.20 , character.size );
+                glVertex2f( character.size * 0.80 , character.size );
+                glVertex2f( character.size , character.size * 0.80 );
+            glEnd();
+
+            glBegin( GL_LINES );
+                glVertex2f( character.size , character.size * 0.20 );
+                glVertex2f( character.size , character.size * 1.40 );
+            glEnd();
+        }
+
         void R( ){
             glBegin( GL_LINE_STRIP );
                 glVertex2f( 0 , character.size );
@@ -256,6 +494,16 @@ namespace glst{
             glBegin( GL_LINES );
                 glVertex2f( character.size , character.size );
                 glVertex2f( character.size * 0.80 , character.size * 0.60 );
+            glEnd();
+        }
+
+        void r( ){
+            glBegin( GL_LINE_STRIP );
+                glVertex2f( 0 , character.size );
+                glVertex2f( 0 , character.size * 0.40 );
+                glVertex2f( character.size * 0.20 , character.size * 0.20 );
+                glVertex2f( character.size * 0.80 , character.size * 0.20 );
+                glVertex2f( character.size , character.size * 0.50 );
             glEnd();
         }
 
@@ -274,12 +522,41 @@ namespace glst{
             glEnd();
         }
 
+        void s( ){
+            glBegin( GL_LINE_STRIP );
+                glVertex2f( character.size , character.size * 0.20 );
+                glVertex2f( character.size * 0.80 , character.size * 0.20 );
+                glVertex2f( character.size * 0.20 , character.size * 0.20 );
+                glVertex2f( 0 , character.size * 0.40 );
+                glVertex2f( 0 , character.size * 0.60 );
+                glVertex2f( character.size , character.size * 0.60 );
+                glVertex2f( character.size , character.size * 0.80 );
+                glVertex2f( character.size * 0.80 , character.size );
+                glVertex2f( 0 , character.size );
+            glEnd();
+        }
+
         void T( ){
             glBegin( GL_LINES );
                 glVertex2f( 0 , 0 );
                 glVertex2f( character.size , 0 );
                 glVertex2f( character.size * 0.50 , 0 );
                 glVertex2f( character.size * 0.50 , character.size );
+            glEnd();
+        }
+
+        void t( ){
+            glBegin( GL_LINE_STRIP );
+                glVertex2f( character.size * 0.20 , 0 );
+                glVertex2f( character.size * 0.20 , character.size * 0.80 );
+                glVertex2f( character.size * 0.40 ,  character.size );
+                glVertex2f( character.size * 0.80 ,  character.size );
+                glVertex2f( character.size ,  character.size * 0.80 );
+            glEnd();
+
+            glBegin( GL_LINES );
+                glVertex2f( 0 , character.size * 0.40 );
+                glVertex2f( character.size * 0.80 , character.size * 0.40 );
             glEnd();
         }
 
@@ -294,11 +571,30 @@ namespace glst{
             glEnd();
         }
 
+        void u( ){
+            glBegin( GL_LINE_STRIP );
+                glVertex2f( 0 , character.size * 0.20 );
+                glVertex2f( 0 , character.size * 0.80 );
+                glVertex2f( character.size * 0.20 , character.size );
+                glVertex2f( character.size * 0.80 , character.size );
+                glVertex2f( character.size , character.size * 0.80 );
+                glVertex2f( character.size , character.size * 0.20 );
+            glEnd();
+        }
+
         void V( ){
             glBegin( GL_LINE_STRIP );
                 glVertex2f( 0 , 0 );
                 glVertex2f( character.size * 0.50 , character.size );
                 glVertex2f( character.size , 0 );
+            glEnd();
+        }
+
+        void v( ){
+            glBegin( GL_LINE_STRIP );
+                glVertex2f( character.size * 0.20 , character.size * 0.20 );
+                glVertex2f( character.size * 0.50 , character.size );
+                glVertex2f( character.size * 0.80 , character.size * 0.20 );
             glEnd();
         }
 
@@ -312,11 +608,30 @@ namespace glst{
             glEnd();
         }
 
+        void w( ){
+            glBegin( GL_LINE_STRIP );
+                glVertex2f( 0 , character.size * 0.20 );
+                glVertex2f( character.size * 0.20 , character.size );
+                glVertex2f( character.size * 0.50 , character.size * 0.40 );
+                glVertex2f( character.size * 0.80 , character.size );
+                glVertex2f( character.size , character.size * 0.20 );
+            glEnd();
+        }
+
         void X( ){
             glBegin( GL_LINES );
                 glVertex2f( 0 , 0 );
                 glVertex2f( character.size , character.size );
                 glVertex2f( character.size , 0 );
+                glVertex2f( 0 , character.size );
+            glEnd();
+        }
+
+        void x( ){
+            glBegin( GL_LINES );
+                glVertex2f( 0 , character.size * 0.20 );
+                glVertex2f( character.size , character.size );
+                glVertex2f( character.size , character.size * 0.20 );
                 glVertex2f( 0 , character.size );
             glEnd();
         }
@@ -332,12 +647,43 @@ namespace glst{
             glEnd();
         }
 
+        void y( ){
+            glBegin( GL_LINE_STRIP );
+                glVertex2f( 0 , character.size * 0.20 );
+                glVertex2f( 0 , character.size * 0.80 );
+                glVertex2f( character.size * 0.20 , character.size );
+                glVertex2f( character.size * 0.80 , character.size );
+                glVertex2f( character.size , character.size * 0.60 );
+                glVertex2f( character.size , character.size * 0.60 );
+            glEnd();
+            glBegin( GL_LINE_STRIP );
+                glVertex2f( character.size , character.size * 0.20 );
+                glVertex2f( character.size , character.size * 1.20 );
+                glVertex2f( character.size * 0.80 , character.size * 1.40 );
+                glVertex2f( character.size * 0.20 , character.size * 1.40 );
+                glVertex2f( 0 , character.size * 1.20 );
+            glEnd();
+        }
+
         void Z( ){
             glBegin( GL_LINE_STRIP );
                 glVertex2f( 0 , 0 );
                 glVertex2f( character.size , 0);
                 glVertex2f( 0 , character.size );
                 glVertex2f( character.size , character.size );
+            glEnd();
+        }
+
+        void z( ){
+            glBegin( GL_LINE_STRIP );
+                glVertex2f( 0 , character.size * 0.20 );
+                glVertex2f( character.size , character.size * 0.20 );
+                glVertex2f( 0 , character.size );
+                glVertex2f( character.size , character.size );
+            glEnd();
+            glBegin( GL_LINES );
+                glVertex2f( character.size * 0.20 , character.size * 0.60 );
+                glVertex2f( character.size * 0.80 , character.size * 0.60 );
             glEnd();
         }
 
@@ -625,199 +971,303 @@ namespace glst{
             //draw();
         }
 
-        void draw( ){
+       void draw( ){
             glPushMatrix();
             glPushAttrib( GL_CURRENT_BIT );
                 glColor4f( color_r, color_g, color_b, color_a );
-                for ( std::size_t i = 0; i < text.length( ); i++ ){
-                    if( text[i] == 0x20 || text[i] == 0x20 ){
+                for ( std::size_t pos = 0; pos < text.length( ); pos++ ){
+                    if( text[pos] == 0x20 || text[pos] == 0x20 ){
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == 'A' || text[i] == 'a' ){
+                    else if( text[pos] == 'A' ){
                         A();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == 'B' || text[i] == 'b' ){
+                    else if( text[pos] == 'a' ){
+                        a();
+                        glTranslatef(character.size + character.spacing, 0, 0);
+                    }
+                    else if( text[pos] == 'B' ){
                         B();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == 'C' || text[i] == 'c' ){
+                    else if( text[pos] == 'b' ){
+                        b();
+                        glTranslatef(character.size + character.spacing, 0, 0);
+                    }
+                    else if( text[pos] == 'C' ){
                         C();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == 'D' || text[i] == 'd' ){
+                    else if( text[pos] == 'c' ){
+                        c();
+                        glTranslatef(character.size + character.spacing, 0, 0);
+                    }
+                    else if( text[pos] == 'D' ){
                         D();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == 'E' || text[i] == 'e' ){
+                    else if( text[pos] == 'd' ){
+                        d();
+                        glTranslatef(character.size + character.spacing, 0, 0);
+                    }
+                    else if( text[pos] == 'E' ){
                         E();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == 'F' || text[i] == 'f' ){
+                    else if( text[pos] == 'e' ){
+                        e();
+                        glTranslatef(character.size + character.spacing, 0, 0);
+                    }
+                    else if( text[pos] == 'F' ){
                         F();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == 'G' || text[i] == 'g' ){
+                    else if( text[pos] == 'f' ){
+                        f();
+                        glTranslatef(character.size + character.spacing, 0, 0);
+                    }
+                    else if( text[pos] == 'G' ){
                         G();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == 'H' || text[i] == 'h' ){
+                    else if( text[pos] == 'g' ){
+                        g();
+                        glTranslatef(character.size + character.spacing, 0, 0);
+                    }
+                    else if( text[pos] == 'H' ){
                         H();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == 'I' || text[i] == 'i' ){
+                    else if( text[pos] == 'h' ){
+                        h();
+                        glTranslatef(character.size + character.spacing, 0, 0);
+                    }
+                    else if( text[pos] == 'I' ){
                         I();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == 'J' || text[i] == 'j' ){
+                    else if( text[pos] == 'i' ){
+                        i();
+                        glTranslatef(character.size + character.spacing, 0, 0);
+                    }
+                    else if( text[pos] == 'J' ){
                         J();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == 'K' || text[i] == 'k' ){
+                    else if( text[pos] == 'j' ){
+                        j();
+                        glTranslatef(character.size + character.spacing, 0, 0);
+                    }
+                    else if( text[pos] == 'K' ){
                         K();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == 'L' || text[i] == 'l' ){
+                    else if( text[pos] == 'k' ){
+                        k();
+                        glTranslatef(character.size + character.spacing, 0, 0);
+                    }
+                    else if( text[pos] == 'L' ){
                         L();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == 'M' || text[i] == 'm' ){
+                    else if( text[pos] == 'l' ){
+                        l();
+                        glTranslatef(character.size + character.spacing, 0, 0);
+                    }
+                    else if( text[pos] == 'M' ){
                         M();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == 'N' || text[i] == 'n' ){
+                    else if( text[pos] == 'm' ){
+                        m();
+                        glTranslatef(character.size + character.spacing, 0, 0);
+                    }
+                    else if( text[pos] == 'N' ){
                         N();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == 'O' || text[i] == 'o' ){
+                    else if( text[pos] == 'n' ){
+                        n();
+                        glTranslatef(character.size + character.spacing, 0, 0);
+                    }
+                    else if( text[pos] == 'O' ){
                         O();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == 'P' || text[i] == 'p' ){
+                    else if( text[pos] == 'o' ){
+                        o();
+                        glTranslatef(character.size + character.spacing, 0, 0);
+                    }
+                    else if( text[pos] == 'P' ){
                         P();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == 'Q' || text[i] == 'q' ){
+                    else if( text[pos] == 'p' ){
+                        p();
+                        glTranslatef(character.size + character.spacing, 0, 0);
+                    }
+                    else if( text[pos] == 'Q' ){
                         Q();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == 'R' || text[i] == 'r' ){
+                    else if( text[pos] == 'q' ){
+                        q();
+                        glTranslatef(character.size + character.spacing, 0, 0);
+                    }
+                    else if( text[pos] == 'R' ){
                         R();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == 'S' || text[i] == 's' ){
+                    else if( text[pos] == 'r' ){
+                        r();
+                        glTranslatef(character.size + character.spacing, 0, 0);
+                    }
+                    else if( text[pos] == 'S' ){
                         S();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == 'T' || text[i] == 't' ){
+                    else if( text[pos] == 's' ){
+                        s();
+                        glTranslatef(character.size + character.spacing, 0, 0);
+                    }
+                    else if( text[pos] == 'T' ){
                         T();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == 'U' || text[i] == 'u' ){
+                    else if( text[pos] == 't' ){
+                        t();
+                        glTranslatef(character.size + character.spacing, 0, 0);
+                    }
+                    else if( text[pos] == 'U' ){
                         U();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == 'V' || text[i] == 'v' ){
+                    else if( text[pos] == 'u' ){
+                        u();
+                        glTranslatef(character.size + character.spacing, 0, 0);
+                    }
+                    else if( text[pos] == 'V' ){
                         V();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == 'W' || text[i] == 'w' ){
+                    else if( text[pos] == 'v' ){
+                        v();
+                        glTranslatef(character.size + character.spacing, 0, 0);
+                    }
+                    else if( text[pos] == 'W' ){
                         W();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == 'X' || text[i] == 'x' ){
+                    else if( text[pos] == 'w' ){
+                        w();
+                        glTranslatef(character.size + character.spacing, 0, 0);
+                    }
+                    else if( text[pos] == 'X' ){
                         X();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == 'Y' || text[i] == 'y' ){
+                    else if( text[pos] == 'x' ){
+                        x();
+                        glTranslatef(character.size + character.spacing, 0, 0);
+                    }
+                    else if( text[pos] == 'Y' ){
                         Y();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == 'Z' || text[i] == 'z' ){
+                    else if( text[pos] == 'y' ){
+                        y();
+                        glTranslatef(character.size + character.spacing, 0, 0);
+                    }
+                    else if( text[pos] == 'Z' ){
                         Z();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == '0' ){
+                    else if( text[pos] == 'z' ){
+                        z();
+                        glTranslatef(character.size + character.spacing, 0, 0);
+                    }
+                    else if( text[pos] == '0' ){
                         N0();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == '1' ){
+                    else if( text[pos] == '1' ){
                         N1();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == '2' ){
+                    else if( text[pos] == '2' ){
                         N2();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == '3' ){
+                    else if( text[pos] == '3' ){
                         N3();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == '4' ){
+                    else if( text[pos] == '4' ){
                         N4();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == '5' ){
+                    else if( text[pos] == '5' ){
                         N5();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == '6' ){
+                    else if( text[pos] == '6' ){
                         N6();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == '7' ){
+                    else if( text[pos] == '7' ){
                         N7();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == '8' ){
+                    else if( text[pos] == '8' ){
                         N8();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == '9' ){
+                    else if( text[pos] == '9' ){
                         N9();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == '.' ){
+                    else if( text[pos] == '.' ){
                         dot();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == ',' ){
+                    else if( text[pos] == ',' ){
                         comma();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == '"' ){
+                    else if( text[pos] == '"' ){
                         double_quote();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == '\'' ){
+                    else if( text[pos] == '\'' ){
                         single_quote();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == '!' ){
+                    else if( text[pos] == '!' ){
                         exclamation_mark();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == '?' ){
+                    else if( text[pos] == '?' ){
                         question_mark();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == '=' ){
+                    else if( text[pos] == '=' ){
                         equals();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == '/' ){
+                    else if( text[pos] == '/' ){
                         slash_fw();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == '-' ){
+                    else if( text[pos] == '-' ){
                         minus();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == '+' ){
+                    else if( text[pos] == '+' ){
                         plus();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
-                    else if( text[i] == '*' ){
+                    else if( text[pos] == '*' ){
                         asterisk();
                         glTranslatef(character.size + character.spacing, 0, 0);
                     }
